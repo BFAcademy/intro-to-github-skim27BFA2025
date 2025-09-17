@@ -2,6 +2,24 @@ public class Microwave {
     private String brand;
     private int maxPower;
 
+    public Microwvave()
+    {
+        brand= "No brand";
+        maxPower = 800;
+    }
+
+    public Microwave (String Manufacturer)
+    {
+      brand = manufacturer;
+      maxPower =  800;
+    }
+
+    public Microwave()
+    {
+        brand = "no brand ";
+        maxPower = 880;
+    }
+
     public Microwave (String manufacturer,int power)
     {
     brand =  manufacturer;
@@ -44,9 +62,10 @@ public class Microwave {
     public static void main(String[] args)//those will govern how we interact with this method 
     {
          Microwave mySweetCookingDevice =  new Microwave("Samsung", 800);//creating a microwave
-         mySweetCookingDevice.cook30();
-         mySweetCookingDevice.cook(120,400);//(120,400)actual parameter(values)
-         mySweetCookingDevice.beep();
+         Microwave m2 = new Microwave;
+         Microwave m3 = new Microwave(500);
+         Microwave m4 = new Microwave("LG");
+        
     }
 }
 
